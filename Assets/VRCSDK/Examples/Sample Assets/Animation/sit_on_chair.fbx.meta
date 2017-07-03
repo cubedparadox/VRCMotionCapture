@@ -1,0 +1,1347 @@
+fileFormatVersion: 2
+guid: 1bf54d5f7f9044985af433bf42d65337
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Skeleton_v7:Head
+    100004: Skeleton_v7:Head_End
+    100006: Skeleton_v7:Hips
+    100008: Skeleton_v7:LeftArm
+    100010: Skeleton_v7:LeftArmRoll
+    100012: Skeleton_v7:LeftFoot
+    100014: Skeleton_v7:LeftForeArm
+    100016: Skeleton_v7:LeftForeArmRoll
+    100018: Skeleton_v7:LeftHand
+    100020: Skeleton_v7:LeftHandIndex1
+    100022: Skeleton_v7:LeftHandIndex2
+    100024: Skeleton_v7:LeftHandIndex3
+    100026: Skeleton_v7:LeftHandIndex4
+    100028: Skeleton_v7:LeftHandMiddle1
+    100030: Skeleton_v7:LeftHandMiddle2
+    100032: Skeleton_v7:LeftHandMiddle3
+    100034: Skeleton_v7:LeftHandMiddle4
+    100036: Skeleton_v7:LeftHandPinky1
+    100038: Skeleton_v7:LeftHandPinky2
+    100040: Skeleton_v7:LeftHandPinky3
+    100042: Skeleton_v7:LeftHandPinky4
+    100044: Skeleton_v7:LeftHandRing1
+    100046: Skeleton_v7:LeftHandRing2
+    100048: Skeleton_v7:LeftHandRing3
+    100050: Skeleton_v7:LeftHandRing4
+    100052: Skeleton_v7:LeftHandThumb1
+    100054: Skeleton_v7:LeftHandThumb2
+    100056: Skeleton_v7:LeftHandThumb3
+    100058: Skeleton_v7:LeftHandThumb4
+    100060: Skeleton_v7:LeftLeg
+    100062: Skeleton_v7:LeftLegRoll
+    100064: Skeleton_v7:LeftShoulder
+    100066: Skeleton_v7:LeftToe_End
+    100068: Skeleton_v7:LeftToeBase
+    100070: Skeleton_v7:LeftUpLeg
+    100072: Skeleton_v7:LeftUpLegRoll
+    100074: Skeleton_v7:Neck
+    100076: Skeleton_v7:RightArm
+    100078: Skeleton_v7:RightArmRoll
+    100080: Skeleton_v7:RightFoot
+    100082: Skeleton_v7:RightForeArm
+    100084: Skeleton_v7:RightForeArmRoll
+    100086: Skeleton_v7:RightHand
+    100088: Skeleton_v7:RightHandIndex1
+    100090: Skeleton_v7:RightHandIndex2
+    100092: Skeleton_v7:RightHandIndex3
+    100094: Skeleton_v7:RightHandIndex4
+    100096: Skeleton_v7:RightHandMiddle1
+    100098: Skeleton_v7:RightHandMiddle2
+    100100: Skeleton_v7:RightHandMiddle3
+    100102: Skeleton_v7:RightHandMiddle4
+    100104: Skeleton_v7:RightHandPinky1
+    100106: Skeleton_v7:RightHandPinky2
+    100108: Skeleton_v7:RightHandPinky3
+    100110: Skeleton_v7:RightHandPinky4
+    100112: Skeleton_v7:RightHandRing1
+    100114: Skeleton_v7:RightHandRing2
+    100116: Skeleton_v7:RightHandRing3
+    100118: Skeleton_v7:RightHandRing4
+    100120: Skeleton_v7:RightHandThumb1
+    100122: Skeleton_v7:RightHandThumb2
+    100124: Skeleton_v7:RightHandThumb3
+    100126: Skeleton_v7:RightHandThumb4
+    100128: Skeleton_v7:RightLeg
+    100130: Skeleton_v7:RightLegRoll
+    100132: Skeleton_v7:RightShoulder
+    100134: Skeleton_v7:RightToe_End
+    100136: Skeleton_v7:RightToeBase
+    100138: Skeleton_v7:RightUpLeg
+    100140: Skeleton_v7:RightUpLegRoll
+    100142: Skeleton_v7:Spine
+    100144: Skeleton_v7:Spine1
+    100146: Skeleton_v7:Spine2
+    100148: Skeleton_v7:Spine3
+    400000: //RootNode
+    400002: Skeleton_v7:Head
+    400004: Skeleton_v7:Head_End
+    400006: Skeleton_v7:Hips
+    400008: Skeleton_v7:LeftArm
+    400010: Skeleton_v7:LeftArmRoll
+    400012: Skeleton_v7:LeftFoot
+    400014: Skeleton_v7:LeftForeArm
+    400016: Skeleton_v7:LeftForeArmRoll
+    400018: Skeleton_v7:LeftHand
+    400020: Skeleton_v7:LeftHandIndex1
+    400022: Skeleton_v7:LeftHandIndex2
+    400024: Skeleton_v7:LeftHandIndex3
+    400026: Skeleton_v7:LeftHandIndex4
+    400028: Skeleton_v7:LeftHandMiddle1
+    400030: Skeleton_v7:LeftHandMiddle2
+    400032: Skeleton_v7:LeftHandMiddle3
+    400034: Skeleton_v7:LeftHandMiddle4
+    400036: Skeleton_v7:LeftHandPinky1
+    400038: Skeleton_v7:LeftHandPinky2
+    400040: Skeleton_v7:LeftHandPinky3
+    400042: Skeleton_v7:LeftHandPinky4
+    400044: Skeleton_v7:LeftHandRing1
+    400046: Skeleton_v7:LeftHandRing2
+    400048: Skeleton_v7:LeftHandRing3
+    400050: Skeleton_v7:LeftHandRing4
+    400052: Skeleton_v7:LeftHandThumb1
+    400054: Skeleton_v7:LeftHandThumb2
+    400056: Skeleton_v7:LeftHandThumb3
+    400058: Skeleton_v7:LeftHandThumb4
+    400060: Skeleton_v7:LeftLeg
+    400062: Skeleton_v7:LeftLegRoll
+    400064: Skeleton_v7:LeftShoulder
+    400066: Skeleton_v7:LeftToe_End
+    400068: Skeleton_v7:LeftToeBase
+    400070: Skeleton_v7:LeftUpLeg
+    400072: Skeleton_v7:LeftUpLegRoll
+    400074: Skeleton_v7:Neck
+    400076: Skeleton_v7:RightArm
+    400078: Skeleton_v7:RightArmRoll
+    400080: Skeleton_v7:RightFoot
+    400082: Skeleton_v7:RightForeArm
+    400084: Skeleton_v7:RightForeArmRoll
+    400086: Skeleton_v7:RightHand
+    400088: Skeleton_v7:RightHandIndex1
+    400090: Skeleton_v7:RightHandIndex2
+    400092: Skeleton_v7:RightHandIndex3
+    400094: Skeleton_v7:RightHandIndex4
+    400096: Skeleton_v7:RightHandMiddle1
+    400098: Skeleton_v7:RightHandMiddle2
+    400100: Skeleton_v7:RightHandMiddle3
+    400102: Skeleton_v7:RightHandMiddle4
+    400104: Skeleton_v7:RightHandPinky1
+    400106: Skeleton_v7:RightHandPinky2
+    400108: Skeleton_v7:RightHandPinky3
+    400110: Skeleton_v7:RightHandPinky4
+    400112: Skeleton_v7:RightHandRing1
+    400114: Skeleton_v7:RightHandRing2
+    400116: Skeleton_v7:RightHandRing3
+    400118: Skeleton_v7:RightHandRing4
+    400120: Skeleton_v7:RightHandThumb1
+    400122: Skeleton_v7:RightHandThumb2
+    400124: Skeleton_v7:RightHandThumb3
+    400126: Skeleton_v7:RightHandThumb4
+    400128: Skeleton_v7:RightLeg
+    400130: Skeleton_v7:RightLegRoll
+    400132: Skeleton_v7:RightShoulder
+    400134: Skeleton_v7:RightToe_End
+    400136: Skeleton_v7:RightToeBase
+    400138: Skeleton_v7:RightUpLeg
+    400140: Skeleton_v7:RightUpLegRoll
+    400142: Skeleton_v7:Spine
+    400144: Skeleton_v7:Spine1
+    400146: Skeleton_v7:Spine2
+    400148: Skeleton_v7:Spine3
+    7400000: SitOnChairTalk_M
+    7400002: SitOnChairTalk_M0
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: SitOnChairTalk_M
+      takeName: SitOnChairTalk_M
+      firstFrame: 0
+      lastFrame: 312
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Skeleton_v7:Hips
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:LeftUpLeg
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:LeftUpLeg/Skeleton_v7:LeftUpLegRoll
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:LeftUpLeg/Skeleton_v7:LeftUpLegRoll/Skeleton_v7:LeftLeg
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:LeftUpLeg/Skeleton_v7:LeftUpLegRoll/Skeleton_v7:LeftLeg/Skeleton_v7:LeftLegRoll
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:LeftUpLeg/Skeleton_v7:LeftUpLegRoll/Skeleton_v7:LeftLeg/Skeleton_v7:LeftLegRoll/Skeleton_v7:LeftFoot
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:LeftUpLeg/Skeleton_v7:LeftUpLegRoll/Skeleton_v7:LeftLeg/Skeleton_v7:LeftLegRoll/Skeleton_v7:LeftFoot/Skeleton_v7:LeftToeBase
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:LeftUpLeg/Skeleton_v7:LeftUpLegRoll/Skeleton_v7:LeftLeg/Skeleton_v7:LeftLegRoll/Skeleton_v7:LeftFoot/Skeleton_v7:LeftToeBase/Skeleton_v7:LeftToe_End
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:RightUpLeg
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:RightUpLeg/Skeleton_v7:RightUpLegRoll
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:RightUpLeg/Skeleton_v7:RightUpLegRoll/Skeleton_v7:RightLeg
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:RightUpLeg/Skeleton_v7:RightUpLegRoll/Skeleton_v7:RightLeg/Skeleton_v7:RightLegRoll
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:RightUpLeg/Skeleton_v7:RightUpLegRoll/Skeleton_v7:RightLeg/Skeleton_v7:RightLegRoll/Skeleton_v7:RightFoot
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:RightUpLeg/Skeleton_v7:RightUpLegRoll/Skeleton_v7:RightLeg/Skeleton_v7:RightLegRoll/Skeleton_v7:RightFoot/Skeleton_v7:RightToeBase
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:RightUpLeg/Skeleton_v7:RightUpLegRoll/Skeleton_v7:RightLeg/Skeleton_v7:RightLegRoll/Skeleton_v7:RightFoot/Skeleton_v7:RightToeBase/Skeleton_v7:RightToe_End
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandIndex1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandIndex1/Skeleton_v7:LeftHandIndex2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandIndex1/Skeleton_v7:LeftHandIndex2/Skeleton_v7:LeftHandIndex3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandIndex1/Skeleton_v7:LeftHandIndex2/Skeleton_v7:LeftHandIndex3/Skeleton_v7:LeftHandIndex4
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandMiddle1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandMiddle1/Skeleton_v7:LeftHandMiddle2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandMiddle1/Skeleton_v7:LeftHandMiddle2/Skeleton_v7:LeftHandMiddle3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandMiddle1/Skeleton_v7:LeftHandMiddle2/Skeleton_v7:LeftHandMiddle3/Skeleton_v7:LeftHandMiddle4
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandPinky1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandPinky1/Skeleton_v7:LeftHandPinky2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandPinky1/Skeleton_v7:LeftHandPinky2/Skeleton_v7:LeftHandPinky3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandPinky1/Skeleton_v7:LeftHandPinky2/Skeleton_v7:LeftHandPinky3/Skeleton_v7:LeftHandPinky4
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandRing1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandRing1/Skeleton_v7:LeftHandRing2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandRing1/Skeleton_v7:LeftHandRing2/Skeleton_v7:LeftHandRing3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandRing1/Skeleton_v7:LeftHandRing2/Skeleton_v7:LeftHandRing3/Skeleton_v7:LeftHandRing4
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandThumb1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandThumb1/Skeleton_v7:LeftHandThumb2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandThumb1/Skeleton_v7:LeftHandThumb2/Skeleton_v7:LeftHandThumb3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandThumb1/Skeleton_v7:LeftHandThumb2/Skeleton_v7:LeftHandThumb3/Skeleton_v7:LeftHandThumb4
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:Neck
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:Neck/Skeleton_v7:Head
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:Neck/Skeleton_v7:Head/Skeleton_v7:Head_End
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandIndex1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandIndex1/Skeleton_v7:RightHandIndex2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandIndex1/Skeleton_v7:RightHandIndex2/Skeleton_v7:RightHandIndex3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandIndex1/Skeleton_v7:RightHandIndex2/Skeleton_v7:RightHandIndex3/Skeleton_v7:RightHandIndex4
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandMiddle1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandMiddle1/Skeleton_v7:RightHandMiddle2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandMiddle1/Skeleton_v7:RightHandMiddle2/Skeleton_v7:RightHandMiddle3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandMiddle1/Skeleton_v7:RightHandMiddle2/Skeleton_v7:RightHandMiddle3/Skeleton_v7:RightHandMiddle4
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandPinky1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandPinky1/Skeleton_v7:RightHandPinky2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandPinky1/Skeleton_v7:RightHandPinky2/Skeleton_v7:RightHandPinky3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandPinky1/Skeleton_v7:RightHandPinky2/Skeleton_v7:RightHandPinky3/Skeleton_v7:RightHandPinky4
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandRing1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandRing1/Skeleton_v7:RightHandRing2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandRing1/Skeleton_v7:RightHandRing2/Skeleton_v7:RightHandRing3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandRing1/Skeleton_v7:RightHandRing2/Skeleton_v7:RightHandRing3/Skeleton_v7:RightHandRing4
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandThumb1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandThumb1/Skeleton_v7:RightHandThumb2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandThumb1/Skeleton_v7:RightHandThumb2/Skeleton_v7:RightHandThumb3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandThumb1/Skeleton_v7:RightHandThumb2/Skeleton_v7:RightHandThumb3/Skeleton_v7:RightHandThumb4
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: SitOnChairTalk_M0
+      takeName: SitOnChairTalk_M
+      firstFrame: 0
+      lastFrame: 5
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Skeleton_v7:Hips
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:LeftUpLeg
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:LeftUpLeg/Skeleton_v7:LeftUpLegRoll
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:LeftUpLeg/Skeleton_v7:LeftUpLegRoll/Skeleton_v7:LeftLeg
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:LeftUpLeg/Skeleton_v7:LeftUpLegRoll/Skeleton_v7:LeftLeg/Skeleton_v7:LeftLegRoll
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:LeftUpLeg/Skeleton_v7:LeftUpLegRoll/Skeleton_v7:LeftLeg/Skeleton_v7:LeftLegRoll/Skeleton_v7:LeftFoot
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:LeftUpLeg/Skeleton_v7:LeftUpLegRoll/Skeleton_v7:LeftLeg/Skeleton_v7:LeftLegRoll/Skeleton_v7:LeftFoot/Skeleton_v7:LeftToeBase
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:LeftUpLeg/Skeleton_v7:LeftUpLegRoll/Skeleton_v7:LeftLeg/Skeleton_v7:LeftLegRoll/Skeleton_v7:LeftFoot/Skeleton_v7:LeftToeBase/Skeleton_v7:LeftToe_End
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:RightUpLeg
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:RightUpLeg/Skeleton_v7:RightUpLegRoll
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:RightUpLeg/Skeleton_v7:RightUpLegRoll/Skeleton_v7:RightLeg
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:RightUpLeg/Skeleton_v7:RightUpLegRoll/Skeleton_v7:RightLeg/Skeleton_v7:RightLegRoll
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:RightUpLeg/Skeleton_v7:RightUpLegRoll/Skeleton_v7:RightLeg/Skeleton_v7:RightLegRoll/Skeleton_v7:RightFoot
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:RightUpLeg/Skeleton_v7:RightUpLegRoll/Skeleton_v7:RightLeg/Skeleton_v7:RightLegRoll/Skeleton_v7:RightFoot/Skeleton_v7:RightToeBase
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:RightUpLeg/Skeleton_v7:RightUpLegRoll/Skeleton_v7:RightLeg/Skeleton_v7:RightLegRoll/Skeleton_v7:RightFoot/Skeleton_v7:RightToeBase/Skeleton_v7:RightToe_End
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandIndex1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandIndex1/Skeleton_v7:LeftHandIndex2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandIndex1/Skeleton_v7:LeftHandIndex2/Skeleton_v7:LeftHandIndex3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandIndex1/Skeleton_v7:LeftHandIndex2/Skeleton_v7:LeftHandIndex3/Skeleton_v7:LeftHandIndex4
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandMiddle1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandMiddle1/Skeleton_v7:LeftHandMiddle2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandMiddle1/Skeleton_v7:LeftHandMiddle2/Skeleton_v7:LeftHandMiddle3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandMiddle1/Skeleton_v7:LeftHandMiddle2/Skeleton_v7:LeftHandMiddle3/Skeleton_v7:LeftHandMiddle4
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandPinky1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandPinky1/Skeleton_v7:LeftHandPinky2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandPinky1/Skeleton_v7:LeftHandPinky2/Skeleton_v7:LeftHandPinky3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandPinky1/Skeleton_v7:LeftHandPinky2/Skeleton_v7:LeftHandPinky3/Skeleton_v7:LeftHandPinky4
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandRing1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandRing1/Skeleton_v7:LeftHandRing2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandRing1/Skeleton_v7:LeftHandRing2/Skeleton_v7:LeftHandRing3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandRing1/Skeleton_v7:LeftHandRing2/Skeleton_v7:LeftHandRing3/Skeleton_v7:LeftHandRing4
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandThumb1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandThumb1/Skeleton_v7:LeftHandThumb2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandThumb1/Skeleton_v7:LeftHandThumb2/Skeleton_v7:LeftHandThumb3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:LeftShoulder/Skeleton_v7:LeftArm/Skeleton_v7:LeftArmRoll/Skeleton_v7:LeftForeArm/Skeleton_v7:LeftForeArmRoll/Skeleton_v7:LeftHand/Skeleton_v7:LeftHandThumb1/Skeleton_v7:LeftHandThumb2/Skeleton_v7:LeftHandThumb3/Skeleton_v7:LeftHandThumb4
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:Neck
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:Neck/Skeleton_v7:Head
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:Neck/Skeleton_v7:Head/Skeleton_v7:Head_End
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandIndex1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandIndex1/Skeleton_v7:RightHandIndex2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandIndex1/Skeleton_v7:RightHandIndex2/Skeleton_v7:RightHandIndex3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandIndex1/Skeleton_v7:RightHandIndex2/Skeleton_v7:RightHandIndex3/Skeleton_v7:RightHandIndex4
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandMiddle1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandMiddle1/Skeleton_v7:RightHandMiddle2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandMiddle1/Skeleton_v7:RightHandMiddle2/Skeleton_v7:RightHandMiddle3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandMiddle1/Skeleton_v7:RightHandMiddle2/Skeleton_v7:RightHandMiddle3/Skeleton_v7:RightHandMiddle4
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandPinky1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandPinky1/Skeleton_v7:RightHandPinky2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandPinky1/Skeleton_v7:RightHandPinky2/Skeleton_v7:RightHandPinky3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandPinky1/Skeleton_v7:RightHandPinky2/Skeleton_v7:RightHandPinky3/Skeleton_v7:RightHandPinky4
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandRing1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandRing1/Skeleton_v7:RightHandRing2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandRing1/Skeleton_v7:RightHandRing2/Skeleton_v7:RightHandRing3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandRing1/Skeleton_v7:RightHandRing2/Skeleton_v7:RightHandRing3/Skeleton_v7:RightHandRing4
+        weight: 0
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandThumb1
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandThumb1/Skeleton_v7:RightHandThumb2
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandThumb1/Skeleton_v7:RightHandThumb2/Skeleton_v7:RightHandThumb3
+        weight: 1
+      - path: Skeleton_v7:Hips/Skeleton_v7:Spine/Skeleton_v7:Spine1/Skeleton_v7:Spine2/Skeleton_v7:Spine3/Skeleton_v7:RightShoulder/Skeleton_v7:RightArm/Skeleton_v7:RightArmRoll/Skeleton_v7:RightForeArm/Skeleton_v7:RightForeArmRoll/Skeleton_v7:RightHand/Skeleton_v7:RightHandThumb1/Skeleton_v7:RightHandThumb2/Skeleton_v7:RightHandThumb3/Skeleton_v7:RightHandThumb4
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: Skeleton_v7:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_v7:RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: sit_on_chair(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:Hips
+      position: {x: .00248754583, y: .968453526, z: -.053569559}
+      rotation: {x: -.308958739, y: .0209906828, z: -.0184552446, w: .950664699}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftUpLeg
+      position: {x: -.0891000032, y: -.0627000034, z: -.0214499999}
+      rotation: {x: .220806494, y: -.10693948, z: -.0431679226, w: .96847564}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftUpLegRoll
+      position: {x: 5.3290704e-17, y: -.227322876, z: -4.90156005e-09}
+      rotation: {x: -1.13538459e-18, y: -.0185422376, z: -2.68210637e-28, w: .9998281}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftLeg
+      position: {x: 1.06581408e-16, y: -.221463561, z: -4.44089183e-17}
+      rotation: {x: .298017561, y: .0697468594, z: -.0019004487, w: .952006996}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftLegRoll
+      position: {x: 8.88178367e-17, y: -.220919475, z: -3.50830459e-16}
+      rotation: {x: 5.50599044e-18, y: .0899196416, z: -1.7360086e-26, w: .99594903}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftFoot
+      position: {x: -5.3290704e-17, y: -.186090097, z: -2.08721928e-16}
+      rotation: {x: -.181863144, y: .0110535454, z: -.0978917703, w: .978376687}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftToeBase
+      position: {x: 8.88178367e-17, y: -.062623173, z: .129547492}
+      rotation: {x: -.0263052192, y: .0015395612, z: .0584065653, w: .99794507}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftToe_End
+      position: {x: -0, y: 0, z: .0596685745}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightUpLeg
+      position: {x: .0891000032, y: -.0627000034, z: -.0214499999}
+      rotation: {x: .220017567, y: .0148436194, z: .0580728352, w: .97365272}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightUpLegRoll
+      position: {x: 2.71633436e-08, y: -.227322876, z: -4.95154762e-09}
+      rotation: {x: -3.75594303e-18, y: -.0613391958, z: -8.03506293e-27, w: .99811703}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightLeg
+      position: {x: -3.5527136e-17, y: -.221463561, z: -1.48769876e-16}
+      rotation: {x: .299225837, y: -.0380329192, z: -.0229444001, w: .953147888}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightLegRoll
+      position: {x: -9.19561582e-09, y: -.220919475, z: 6.66133775e-17}
+      rotation: {x: -5.63504715e-18, y: -.0920273066, z: 5.04266391e-27, w: .995756507}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightFoot
+      position: {x: -0, y: -.186090097, z: 1.24344979e-16}
+      rotation: {x: -.196607441, y: .0456086732, z: .0387101397, w: .978655696}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightToeBase
+      position: {x: -7.1054272e-17, y: -.062623173, z: .129547492}
+      rotation: {x: -.0111800916, y: -.000185135868, z: -.0165561214, w: .999800444}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightToe_End
+      position: {x: -0, y: 9.42416773e-06, z: .0596685745}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:Spine
+      position: {x: -2.32301041e-08, y: .0743173882, z: -.0206162352}
+      rotation: {x: .126583934, y: -.00519436225, z: .0222856198, w: .991691947}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:Spine1
+      position: {x: 1.68771578e-07, y: .121899195, z: -.0141951274}
+      rotation: {x: .0510583147, y: -.017390402, z: .0136721442, w: .998450696}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:Spine2
+      position: {x: 3.87878956e-08, y: .11884588, z: -.0109029794}
+      rotation: {x: .050808847, y: -.0179601684, z: .0139236916, w: .998449862}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:Spine3
+      position: {x: -1.84329366e-07, y: .105137438, z: .0104000866}
+      rotation: {x: .0505433641, y: -.0184974652, z: .0141829299, w: .998449862}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftShoulder
+      position: {x: -.0700000003, y: .0456855036, z: .0206740405}
+      rotation: {x: .000247022486, y: -.00343057769, z: .0718197152, w: .997411728}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftArm
+      position: {x: -.107072502, y: 5.68434176e-16, z: -6.661338e-18}
+      rotation: {x: -.0946634486, y: .0490305535, z: -.101483792, w: .989108622}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftArmRoll
+      position: {x: -.152611896, y: 3.12638802e-15, z: 7.43849379e-17}
+      rotation: {x: .143225163, y: -0, z: -0, w: .989690185}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftForeArm
+      position: {x: -.120442748, y: -5.40012472e-15, z: -3.77475832e-17}
+      rotation: {x: .134163707, y: .0103498921, z: -.0149600701, w: .990792274}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftForeArmRoll
+      position: {x: -.163277283, y: 3.12638802e-15, z: -8.88178367e-17}
+      rotation: {x: .211937517, y: -0, z: -0, w: .977283239}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHand
+      position: {x: -.103694186, y: -5.96855879e-15, z: -1.1546319e-16}
+      rotation: {x: 3.56164601e-05, y: .0363191739, z: -.00118088059, w: .999339581}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandIndex1
+      position: {x: -.0882197618, y: .00199729181, z: .0347166918}
+      rotation: {x: -9.78714922e-08, y: 5.82566493e-08, z: 2.8026684e-06, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandIndex2
+      position: {x: -.0422531925, y: 4.86011242e-13, z: -2.62659887e-06}
+      rotation: {x: 0, y: 0, z: 5.52474512e-06, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandIndex3
+      position: {x: -.026539363, y: 2.98996369e-13, z: -1.65163385e-06}
+      rotation: {x: 0, y: 0, z: 1.05223608e-08, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandIndex4
+      position: {x: -.0195822287, y: 2.24531494e-13, z: -1.22166944e-06}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandMiddle1
+      position: {x: -.0880987942, y: .00500890426, z: .0130468439}
+      rotation: {x: 6.51729861e-05, y: -.00538417092, z: -.00374292606, w: .999978542}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandMiddle2
+      position: {x: -.0486325175, y: 2.2737367e-15, z: 1.71668234e-16}
+      rotation: {x: 0, y: 0, z: 1.87585579e-06, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandMiddle3
+      position: {x: -.0276523661, y: 2.2737367e-15, z: -1.91791161e-09}
+      rotation: {x: 0, y: -0, z: -1.20180244e-09, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandMiddle4
+      position: {x: -.0200563204, y: -1.98951967e-15, z: -1.13863745e-08}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandPinky1
+      position: {x: -.0888227448, y: -.00313026994, z: -.0249035638}
+      rotation: {x: 6.55653275e-05, y: -.00538544264, z: -.00375646795, w: .999978483}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandPinky2
+      position: {x: -.0304409917, y: -5.11590748e-15, z: 1.33226755e-16}
+      rotation: {x: 0, y: 0, z: 5.59349076e-07, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandPinky3
+      position: {x: -.0197450146, y: -2.84217088e-16, z: -1.43329171e-09}
+      rotation: {x: 0, y: 0, z: 3.44931152e-07, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandPinky4
+      position: {x: -.016666146, y: 5.96855879e-15, z: 7.91347077e-09}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandRing1
+      position: {x: -.0889375955, y: .0037991954, z: -.00793158915}
+      rotation: {x: 6.55249751e-05, y: -.00535335997, z: -.00375071238, w: .999978662}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandRing2
+      position: {x: -.045377586, y: 3.97903934e-15, z: -2.82138285e-06}
+      rotation: {x: 0, y: 0, z: 1.89814983e-07, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandRing3
+      position: {x: -.0230452586, y: 5.11590748e-15, z: -1.43448096e-06}
+      rotation: {x: 0, y: 0, z: 2.16754459e-09, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandRing4
+      position: {x: -.0192334726, y: -5.40012472e-15, z: -1.20440473e-06}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandThumb1
+      position: {x: -.0434875675, y: -.00798502471, z: .0428243391}
+      rotation: {x: -.124262184, y: .207551479, z: -.284059733, w: .927788496}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandThumb2
+      position: {x: -.0251258984, y: -.00536099356, z: .00707454327}
+      rotation: {x: -.0116519472, y: .0978616104, z: .0999486521, w: .990099847}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandThumb3
+      position: {x: -.0254314039, y: 8.2422955e-15, z: 9.34198283e-08}
+      rotation: {x: 0, y: -0, z: -4.03515742e-06, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:LeftHandThumb4
+      position: {x: -.0266674608, y: -6.53699286e-15, z: -8.21025381e-08}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:Neck
+      position: {x: -2.32300703e-08, y: .11515604, z: .0194701664}
+      rotation: {x: .0937467366, y: .0384456515, z: -.0857916772, w: .991147459}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:Head
+      position: {x: 1.26214545e-07, y: .110733122, z: .0165431704}
+      rotation: {x: -.0589144677, y: .00691298908, z: .0220170338, w: .997996271}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:Head_End
+      position: {x: -0, y: .17704691, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightShoulder
+      position: {x: .0699999928, y: .0456855036, z: .0206729714}
+      rotation: {x: .00444450602, y: .0459270664, z: -.0962205529, w: .994289994}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightArm
+      position: {x: .107072748, y: 1.42108539e-15, z: 2.44249064e-17}
+      rotation: {x: -.0131603489, y: -.0133646755, z: .0303193983, w: .999364257}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightArmRoll
+      position: {x: .152612463, y: -2.84217077e-15, z: -6.66133775e-17}
+      rotation: {x: .157558709, y: -1.95715389e-26, z: -1.92953775e-17, w: .987509668}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightForeArm
+      position: {x: .120443515, y: 5.96855879e-15, z: 5.55111512e-17}
+      rotation: {x: .0446653925, y: -.00830226857, z: .0172627289, w: .998818338}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightForeArmRoll
+      position: {x: .1632763, y: -7.10542736e-15, z: 1.33226755e-16}
+      rotation: {x: .0819417834, y: 2.88963271e-08, z: 6.29786641e-08, w: .996637106}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHand
+      position: {x: .103693567, y: 1.70530253e-15, z: 8.88178367e-17}
+      rotation: {x: -4.05006213e-05, y: -.0959107652, z: .0481774881, w: .994223356}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandIndex1
+      position: {x: .0882166848, y: .00199731789, z: .0347245634}
+      rotation: {x: -1.48735457e-09, y: -4.16118917e-09, z: -4.25922586e-08, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandIndex2
+      position: {x: .0422532037, y: -6.53699286e-15, z: 1.14598538e-06}
+      rotation: {x: 0, y: -0, z: -5.51539824e-06, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandIndex3
+      position: {x: .0265393704, y: 1.98951967e-15, z: 7.19639104e-07}
+      rotation: {x: 0, y: -0, z: -1.46717936e-08, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandIndex4
+      position: {x: .0195822325, y: -1.98951967e-15, z: 5.30975342e-07}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandMiddle1
+      position: {x: .0880976394, y: .00500892755, z: .013054708}
+      rotation: {x: 1.97304519e-08, y: -2.08059459e-09, z: 5.65006189e-07, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandMiddle2
+      position: {x: .0486325249, y: -6.82121011e-15, z: 1.31880779e-06}
+      rotation: {x: 0, y: -0, z: -1.80626887e-06, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandMiddle3
+      position: {x: .0276523698, y: 2.55795374e-15, z: 7.49838932e-07}
+      rotation: {x: 0, y: -0, z: -1.26516866e-07, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandMiddle4
+      position: {x: .0200563259, y: -1.19371176e-14, z: 5.43889882e-07}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandPinky1
+      position: {x: .0888249874, y: -.0031302541, z: -.0248956215}
+      rotation: {x: -3.62900778e-07, y: -4.16118917e-09, z: -1.03921184e-05, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandPinky2
+      position: {x: .0304779634, y: -6.17319509e-13, z: 8.26486257e-07}
+      rotation: {x: 0, y: -0, z: -8.12527333e-07, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandPinky3
+      position: {x: .0197689962, y: -4.09272605e-13, z: 5.36131893e-07}
+      rotation: {x: 0, y: -0, z: -2.59813447e-07, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandPinky4
+      position: {x: .0166863874, y: -3.44471115e-13, z: 4.52454856e-07}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandRing1
+      position: {x: .0889383331, y: .00379921519, z: -.0079236431}
+      rotation: {x: -1.17634691e-09, y: 1.46270131e-18, z: -3.36861703e-08, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandRing2
+      position: {x: .0453775972, y: -1.0231815e-14, z: 1.230522e-06}
+      rotation: {x: 0, y: -0, z: -2.7340965e-08, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandRing3
+      position: {x: .0230452623, y: 2.84217077e-15, z: 6.24929498e-07}
+      rotation: {x: 0, y: 0, z: 1.74370509e-08, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandRing4
+      position: {x: .0192334782, y: -2.84217077e-15, z: 5.2154985e-07}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandThumb1
+      position: {x: .0434837565, y: -.00798500888, z: .0428282097}
+      rotation: {x: -.112463407, y: -.24242197, z: .215628713, w: .939195335}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandThumb2
+      position: {x: .025125267, y: -.00536099263, z: .00707679056}
+      rotation: {x: -.0103010489, y: -.0795396268, z: -.101036869, w: .991644621}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandThumb3
+      position: {x: .0254158918, y: 2.43005621e-13, z: .000888231851}
+      rotation: {x: 0, y: -0, z: -1.74070658e-06, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Skeleton_v7:RightHandThumb4
+      position: {x: .0266511962, y: 1.73372425e-13, z: .00093140325}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 
