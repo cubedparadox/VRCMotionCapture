@@ -12,6 +12,7 @@ Unzip onto your harddrive and then open project in Unity 5.3.4p1
 
 ## How to use
 There's an example scene and example avatar set up in the project already that you can test your first recordings with.
+
 **The animations you record in VRChat will only work with the character you recorded them with so if you don't have source model for the avatar it won't work**.
 
 To test out with example avatar first go to "Scenes/UnityChan Avatar" scene and upload avatar to your account.
