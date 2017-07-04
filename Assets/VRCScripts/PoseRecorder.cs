@@ -107,7 +107,7 @@ public class PoseRecorder : MonoBehaviour
                 json += ";";
         }
 
-        File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games/VRChat/SignAnimation" + DateTime.Now.ToString("dd-MM-yyyy_hh-mm-ss") + ".txt", json);
+        File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games/VRChat/MoCap Recordings/SignAnimation" + DateTime.Now.ToString("dd-MM-yyyy_hh-mm-ss") + ".txt", json);
     }
 
     private void CreateDirectory()
@@ -116,6 +116,8 @@ public class PoseRecorder : MonoBehaviour
             Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games");
         if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games/VRChat"))
             Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games/VRChat");
+        if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games/VRChat/MoCap Recordings"))
+            Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games/VRChat/MoCap Recordings");
     }
 
     private void Update()
