@@ -7,10 +7,15 @@ using System.Collections.Generic;
 
 public class PoseRecorder : MonoBehaviour
 {
+    [Tooltip("How many frames per second the recording should contain")]
     public float framesPerSecond = 30;
+    [Tooltip("The amount of frames that are not included when turning animFile into a Unity Animation")]
     public int frameDiscardAmount = 30;
+    [Tooltip("The Audiosource that will play a sound when recording starts")]
     public AudioSource audioSource;
+    [Tooltip("All the bones that it will attempt to record if possible (if bone doesn't exist it's automatically excluded when recording)")]
     public HumanBodyBones[] bones;
+    [Tooltip("The text component which shows the recording time")]
     public Text timerText;
 
     [HideInInspector]
@@ -28,10 +33,9 @@ public class PoseRecorder : MonoBehaviour
     public bool playingAnim = false;
 
     [HideInInspector]
-    private List<SignKeyframe> recordingFrames = new List<SignKeyframe>();
-    [HideInInspector]
     public int keyframe;
 
+    private List<SignKeyframe> recordingFrames = new List<SignKeyframe>();
     [HideInInspector]
     public List<SignKeyframe> loadPositions = new List<SignKeyframe>();
 
@@ -62,8 +66,8 @@ public class PoseRecorder : MonoBehaviour
 
         recordingFrames = new List<SignKeyframe>();
         keyframe = 0;
-        recording = true;
         animTimer = 0;
+        recording = true;
     }
 
     public void DelayedRecording(float delay)

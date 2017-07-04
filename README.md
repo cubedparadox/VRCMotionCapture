@@ -28,18 +28,21 @@ This folder should now have a .txt file for each of your recorded animations. Co
 While you're in the "UnityChan Example Scene" select the recording files you brought in and then using the Menu bar at top go to "Avatar Recording/Record Selected Animations".
 Your animations should now exist in the "Motion Capture Animations" folder in your project.
 
-**Remember these animations will only work with the Avatar they where recorded with!!**
+**Remember these animations will only work with the Avatar they where recorded with and when rig is generic!!**
 
 ## How to setup an Avatar for mapping your recordings onto
 Create a duplication of the "Scenes/Base Scene" scene. Rename it to have your avatar name in it so you can locate it easier later.
 
-Bring in your Avatar into the project so you have the model to use for mapping your VRC animation file onto.
+Bring in your Avatar into the project so you have the model to use for mapping your VRC animation file onto. Make sure the avatar's rig is set to Humanoid.
+
 Drag your avatar into the scene, select the avatar and then using the Menu bar at top go to "Avatar Recording/Setup Selected Avatar".
+
 The system will now setup this scene to use the avatar you dragged in and the avatar will be disabled so it's not in the way when recording in VRC.
+Now you need to change the Avatars rig to be Generic instead of Humanoid.
 
 Now just use same steps as when you brought in test animations with UnityChan.
 
-**Remember these animations will only work with the Avatar they where recorded with!!**
+**Remember these animations will only work with the Avatar they where recorded with and when rig is generic!!**
 
 ## Notes
 Project contains the following assets:  

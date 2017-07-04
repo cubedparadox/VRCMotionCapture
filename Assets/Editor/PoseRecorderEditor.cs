@@ -20,11 +20,7 @@ public class PoseRecorderEditor : MonoBehaviour
     [MenuItem("Avatar Recording/Play Animation")]
     public static void PlayAnimation()
     {
-        if (PoseRecorder.Instance == null && FindObjectOfType<PoseRecorder>() != null)
-            FindObjectOfType<PoseRecorder>().SetupInstance();
-
-        if (PoseRecorder.Instance == null)
-            return;
+        SetupPoseRecorder();
 
         if (PoseRecorder.Instance.targetAvatar == null)
         {
@@ -62,11 +58,7 @@ public class PoseRecorderEditor : MonoBehaviour
     [MenuItem("Avatar Recording/Setup Selected Avatar")]
     static void SetupAvatar()
     {
-        if (FindObjectOfType<PoseRecorder>() != null)
-            FindObjectOfType<PoseRecorder>().SetupInstance();
-
-        if (PoseRecorder.Instance == null)
-            return;
+        SetupPoseRecorder();
 
         PoseRecorder.Instance.targetAvatar = null;
 
@@ -103,11 +95,7 @@ public class PoseRecorderEditor : MonoBehaviour
     [MenuItem("Avatar Recording/Record Selected Animations")]
     public static void RecordSelectedAnimations()
     {
-        if (PoseRecorder.Instance == null && FindObjectOfType<PoseRecorder>() != null)
-            FindObjectOfType<PoseRecorder>().SetupInstance();
-
-        if (PoseRecorder.Instance == null)
-            return;
+        SetupPoseRecorder();
 
         if (PoseRecorder.Instance.targetAvatar == null)
         {
@@ -141,9 +129,7 @@ public class PoseRecorderEditor : MonoBehaviour
         {
             SetupRecoders();
             if (Selection.objects[animFileIndex].GetType() == typeof(TextAsset))
-            {
                 LoadAndRecord(Selection.objects[animFileIndex].ToString());
-            }
             else
                 Debug.LogWarning("Selected file is not a motion capture asset");
         }
@@ -151,11 +137,7 @@ public class PoseRecorderEditor : MonoBehaviour
 
     public static void LoadAndRecord(string animationFile)
     {
-        if (FindObjectOfType<PoseRecorder>() != null)
-            FindObjectOfType<PoseRecorder>().SetupInstance();
-
-        if (PoseRecorder.Instance == null)
-            return;
+        SetupPoseRecorder();
 
         fileName = Selection.objects[animFileIndex].name;
 
@@ -273,11 +255,7 @@ public class PoseRecorderEditor : MonoBehaviour
 
     private static void LoadFile(string animationFile)
     {
-        if (FindObjectOfType<PoseRecorder>() != null)
-            FindObjectOfType<PoseRecorder>().SetupInstance();
-
-        if (PoseRecorder.Instance == null)
-            return;
+        SetupPoseRecorder();
 
         fileName = Selection.objects[animFileIndex].name;
 
@@ -302,6 +280,18 @@ public class PoseRecorderEditor : MonoBehaviour
             {
                 PoseRecorder.Instance.loadPositions.Add(JsonUtility.FromJson<SignKeyframe>(splitAnimation[i]));
             }
+        }
+    }
+
+    private static void SetupPoseRecorder()
+    {
+        if (FindObjectOfType<PoseRecorder>() != null)
+            FindObjectOfType<PoseRecorder>().SetupInstance();
+
+        if (PoseRecorder.Instance == null)
+        {
+            Debug.LogError("Could not find a PoseRecorder, make sure there's a Pose Recorder in your scene");
+            return;
         }
     }
 }
