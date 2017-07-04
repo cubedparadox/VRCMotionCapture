@@ -3,7 +3,7 @@ Q's VRChat MoCap animation
 
 A unity project which you can use to record your own motion capture recordings directly out of VRChat.
 
-![alt text](Media/Example_Recording.gif) ![alt text](Media/Example_Recording.gif)
+![alt text](Media/Example_Recording.gif)
 
 ## How to install
 Click "Clone or download" button on the right side and select Download ZIP.
@@ -26,6 +26,7 @@ This folder should now have a .txt file for each of your recorded animations. Co
 
 While you're in the "UnityChan Example Scene" select the recording files you brought in and then using the Menu bar at top go to "Avatar Recording/Record Selected Animations".
 Your animations should now exist in the "Motion Capture Animations" folder in your project.
+
 **Remember these animations will only work with the Avatar they where recorded with**
 
 ## How to setup an Avatar for mapping your recordings onto
@@ -38,5 +39,6 @@ The system will now setup this scene to use the avatar you dragged in and the av
 ## Notes
 Project contains the following assets:  
 * <a href="http://unity-chan.com/">SD UnityChan</a>
+
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
