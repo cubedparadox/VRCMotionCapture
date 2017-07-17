@@ -21,8 +21,6 @@ public class PoseRecorder : MonoBehaviour
     [HideInInspector]
     public Animator targetAvatar;
 
-    [HideInInspector]
-    public Transform[] avatarBones;
 
     [HideInInspector]
     public static PoseRecorder Instance;
@@ -44,6 +42,9 @@ public class PoseRecorder : MonoBehaviour
 
     [HideInInspector]
     public Vector3 offset;
+
+    [Header("Don't touch this, only shown so you can verify transform setup")]
+    public Transform[] avatarBones;
 
     private bool recordingTimerOn;
     private float recordingTimer;
@@ -195,8 +196,11 @@ public class PoseRecorder : MonoBehaviour
 
             for (int i = 0; i < avatarBones.Length; i++)
             {
-                if (bones[i] != HumanBodyBones.Head)
+                if (i == 0)
+                {
                     avatarBones[i].position = new Vector3(loadPositions[keyframe].positionX[i], loadPositions[keyframe].positionY[i], loadPositions[keyframe].positionZ[i]);
+                    Debug.Log("Setting position for " + i);
+                }
 
                 avatarBones[i].rotation = new Quaternion(loadPositions[keyframe].rotationX[i], loadPositions[keyframe].rotationY[i], loadPositions[keyframe].rotationZ[i], loadPositions[keyframe].rotationW[i]);
             }

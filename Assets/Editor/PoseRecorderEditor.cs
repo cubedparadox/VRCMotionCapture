@@ -169,7 +169,8 @@ public class PoseRecorderEditor : MonoBehaviour
             {
                 for (int j = 0; j < PoseRecorder.Instance.avatarBones.Length; j++)
                 {
-                    PoseRecorder.Instance.avatarBones[j].transform.position = new Vector3(PoseRecorder.Instance.loadPositions[i].positionX[j], PoseRecorder.Instance.loadPositions[i].positionY[j], PoseRecorder.Instance.loadPositions[i].positionZ[j]);
+                    if (j == 0)
+                        PoseRecorder.Instance.avatarBones[j].transform.position = new Vector3(PoseRecorder.Instance.loadPositions[i].positionX[j], PoseRecorder.Instance.loadPositions[i].positionY[j], PoseRecorder.Instance.loadPositions[i].positionZ[j]);
                     PoseRecorder.Instance.avatarBones[j].transform.rotation = new Quaternion(PoseRecorder.Instance.loadPositions[i].rotationX[j], PoseRecorder.Instance.loadPositions[i].rotationY[j], PoseRecorder.Instance.loadPositions[i].rotationZ[j], PoseRecorder.Instance.loadPositions[i].rotationW[j]);
 
                     Vector3 pos = PoseRecorder.Instance.avatarBones[j].transform.localPosition;
