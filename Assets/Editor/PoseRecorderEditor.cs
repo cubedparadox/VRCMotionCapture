@@ -17,6 +17,8 @@ public class PoseRecorderEditor : MonoBehaviour
 
     public static int animFileIndex;
 
+    private static int fileVersion;
+
     [MenuItem("Avatar Recording/Play Animation")]
     public static void PlayAnimation()
     {
@@ -46,7 +48,7 @@ public class PoseRecorderEditor : MonoBehaviour
             }
         }
 
-        PoseRecorder.Instance.offset = new Vector3(PoseRecorder.Instance.loadPositions[0].positionX[index], 0, PoseRecorder.Instance.loadPositions[0].positionZ[index]);
+        PoseRecorder.Instance.offset = new Vector3(PoseRecorder.Instance.loadPositions[0].hipPositionX, 0, PoseRecorder.Instance.loadPositions[0].hipPositionZ);
 
         LoadFile(Selection.activeObject.ToString());
 
@@ -152,7 +154,9 @@ public class PoseRecorderEditor : MonoBehaviour
 
         bool shouldRecord = true;
 
-        if (keyframeInfo != null && keyframeInfo.version < 1)
+        fileVersion = keyframeInfo.version;
+
+        if (keyframeInfo != null && fileVersion < 1)
         {
             shouldRecord = false;
             Debug.LogError("File not readable");
@@ -169,24 +173,43 @@ public class PoseRecorderEditor : MonoBehaviour
             {
                 for (int j = 0; j < PoseRecorder.Instance.avatarBones.Length; j++)
                 {
-                    if (j == 0)
-                        PoseRecorder.Instance.avatarBones[j].transform.position = new Vector3(PoseRecorder.Instance.loadPositions[i].positionX[j], PoseRecorder.Instance.loadPositions[i].positionY[j], PoseRecorder.Instance.loadPositions[i].positionZ[j]);
-                    PoseRecorder.Instance.avatarBones[j].transform.rotation = new Quaternion(PoseRecorder.Instance.loadPositions[i].rotationX[j], PoseRecorder.Instance.loadPositions[i].rotationY[j], PoseRecorder.Instance.loadPositions[i].rotationZ[j], PoseRecorder.Instance.loadPositions[i].rotationW[j]);
+                    if (fileVersion == 1)
+                    {
+                        if (j == 0)
+                            PoseRecorder.Instance.avatarBones[j].transform.position = new Vector3(PoseRecorder.Instance.loadPositions[i].positionX[j], PoseRecorder.Instance.loadPositions[i].positionY[j], PoseRecorder.Instance.loadPositions[i].positionZ[j]);
+                        PoseRecorder.Instance.avatarBones[j].transform.rotation = new Quaternion(PoseRecorder.Instance.loadPositions[i].rotationX[j], PoseRecorder.Instance.loadPositions[i].rotationY[j], PoseRecorder.Instance.loadPositions[i].rotationZ[j], PoseRecorder.Instance.loadPositions[i].rotationW[j]);
 
-                    Vector3 pos = PoseRecorder.Instance.avatarBones[j].transform.localPosition;
-                    Quaternion rot = PoseRecorder.Instance.avatarBones[j].transform.localRotation;
+                        Vector3 pos = Vector3.zero;
 
-                    objRecorders[j].AddFrame(i / PoseRecorder.Instance.framesPerSecond, pos, rot);
+                        if (j == 0)
+                            pos = PoseRecorder.Instance.avatarBones[j].localPosition;
+                        Quaternion rot = PoseRecorder.Instance.avatarBones[j].localRotation;
+
+                        objRecorders[j].AddFrame(i / PoseRecorder.Instance.framesPerSecond, pos, rot);
+                    }
+                    else
+                    {
+                        Vector3 pos = Vector3.zero;
+
+                        if (j == 0)
+                            pos = new Vector3(PoseRecorder.Instance.loadPositions[i].hipPositionX, PoseRecorder.Instance.loadPositions[i].hipPositionY, PoseRecorder.Instance.loadPositions[i].hipPositionZ);
+                        Quaternion rot = new Quaternion(PoseRecorder.Instance.loadPositions[i].rotationX[j], PoseRecorder.Instance.loadPositions[i].rotationY[j], PoseRecorder.Instance.loadPositions[i].rotationZ[j], PoseRecorder.Instance.loadPositions[i].rotationW[j]);
+
+                        objRecorders[j].AddFrame(i / PoseRecorder.Instance.framesPerSecond, pos, rot);
+                    }
                 }
             }
 
-            for (int i = 0; i < PoseRecorder.Instance.avatarBones.Length; i++)
+            if (fileVersion == 1)
             {
-                PoseRecorder.Instance.avatarBones[i].position = originPos[i];
-                PoseRecorder.Instance.avatarBones[i].rotation = originRot[i];
-            }
+                for (int i = 0; i < PoseRecorder.Instance.avatarBones.Length; i++)
+                {
+                    PoseRecorder.Instance.avatarBones[i].position = originPos[i];
+                    PoseRecorder.Instance.avatarBones[i].rotation = originRot[i];
+                }
 
-            ExportAnimationClip();
+                ExportAnimationClip();
+            }
         }
 
         animFileIndex++;
@@ -210,6 +233,11 @@ public class PoseRecorderEditor : MonoBehaviour
 
             for (int x = 0; x < curves.Length; x++)
             {
+                if (i != 0 && x < 3)
+                {
+                    continue;
+                }
+
                 clip.SetCurve(objRecorders[i].pathName, typeof(Transform), curves[x].propertyName, curves[x].animCurve);
             }
         }
@@ -267,15 +295,17 @@ public class PoseRecorderEditor : MonoBehaviour
 
         KeyframeInformation keyframeInfo = JsonUtility.FromJson<KeyframeInformation>(splitAnimation[0]);
 
-        bool shouldRecord = true;
+        bool shouldLoad = true;
 
-        if (keyframeInfo != null && keyframeInfo.version < 1)
+        fileVersion = keyframeInfo.version;
+
+        if (keyframeInfo != null && fileVersion < 1)
         {
-            shouldRecord = false;
+            shouldLoad = false;
             Debug.LogError("File not readable");
         }
 
-        if (shouldRecord)
+        if (shouldLoad)
         {
             for (int i = 1; i < splitAnimation.Length; i++)
             {

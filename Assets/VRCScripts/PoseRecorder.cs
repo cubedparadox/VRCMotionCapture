@@ -21,7 +21,6 @@ public class PoseRecorder : MonoBehaviour
     [HideInInspector]
     public Animator targetAvatar;
 
-
     [HideInInspector]
     public static PoseRecorder Instance;
 
@@ -62,6 +61,9 @@ public class PoseRecorder : MonoBehaviour
 
     public void StartRecording()
     {
+        if (recording)
+            return;
+
         if (audioSource)
             audioSource.Play();
 
@@ -73,6 +75,9 @@ public class PoseRecorder : MonoBehaviour
 
     public void DelayedRecording(float delay)
     {
+        if (recordingTimerOn)
+            return;
+
         Invoke("StartRecording", delay);
         recordingTimerOn = true;
         recordingTimer = -delay;
@@ -99,7 +104,7 @@ public class PoseRecorder : MonoBehaviour
 
         KeyframeInformation keyframeInformation = new KeyframeInformation
         {
-            version = 1
+            version = 2
         };
 
         json += JsonUtility.ToJson(keyframeInformation);
@@ -142,9 +147,9 @@ public class PoseRecorder : MonoBehaviour
             if (animTimer < (recordingFrames.Count / framesPerSecond))
                 return;
 
-            List<float> tempPositionX = new List<float>();
-            List<float> tempPositionY = new List<float>();
-            List<float> tempPositionZ = new List<float>();
+            float hipPosX = 0;
+            float hipPosY = 0;
+            float hipPosZ = 0;
 
             List<float> tempRotationX = new List<float>();
             List<float> tempRotationY = new List<float>();
@@ -156,32 +161,30 @@ public class PoseRecorder : MonoBehaviour
                 if (Networking.LocalPlayer.GetBoneTransform(bones[i]) == null)
                     continue;
 
-                tempPositionX.Add(Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.position.x);
-                tempPositionY.Add(Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.position.y);
-                tempPositionZ.Add(Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.position.z);
+                if (i == 0)
+                {
+                    hipPosX = Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.position.x;
+                    hipPosY = Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.position.y;
+                    hipPosZ = Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.position.z;
+                }
 
-                tempRotationX.Add(Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.rotation.x);
-                tempRotationY.Add(Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.rotation.y);
-                tempRotationZ.Add(Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.rotation.z);
-                tempRotationW.Add(Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.rotation.w);
+                tempRotationX.Add(Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.localRotation.x);
+                tempRotationY.Add(Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.localRotation.y);
+                tempRotationZ.Add(Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.localRotation.z);
+                tempRotationW.Add(Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.localRotation.w);
             }
 
             SignKeyframe tempFrame = new SignKeyframe()
             {
-                positionX = tempPositionX.ToArray(),
-                positionY = tempPositionY.ToArray(),
-                positionZ = tempPositionZ.ToArray(),
+                hipPositionX = hipPosX,
+                hipPositionY = hipPosY,
+                hipPositionZ = hipPosZ,
 
                 rotationX = tempRotationX.ToArray(),
                 rotationY = tempRotationY.ToArray(),
                 rotationZ = tempRotationZ.ToArray(),
                 rotationW = tempRotationW.ToArray(),
             };
-
-            if (tempFrame != null)
-                Debug.Log("Transforms animated " + tempFrame.positionX.Length);
-            else
-                Debug.LogError("Tempframe is null");
 
             recordingFrames.Add(tempFrame);
 
@@ -198,11 +201,10 @@ public class PoseRecorder : MonoBehaviour
             {
                 if (i == 0)
                 {
-                    avatarBones[i].position = new Vector3(loadPositions[keyframe].positionX[i], loadPositions[keyframe].positionY[i], loadPositions[keyframe].positionZ[i]);
-                    Debug.Log("Setting position for " + i);
+                    avatarBones[i].position = new Vector3(loadPositions[keyframe].hipPositionX, loadPositions[keyframe].hipPositionY, loadPositions[keyframe].hipPositionZ);
                 }
 
-                avatarBones[i].rotation = new Quaternion(loadPositions[keyframe].rotationX[i], loadPositions[keyframe].rotationY[i], loadPositions[keyframe].rotationZ[i], loadPositions[keyframe].rotationW[i]);
+                avatarBones[i].localRotation = new Quaternion(loadPositions[keyframe].rotationX[i], loadPositions[keyframe].rotationY[i], loadPositions[keyframe].rotationZ[i], loadPositions[keyframe].rotationW[i]);
             }
             keyframe++;
 
@@ -226,6 +228,10 @@ public class SignKeyframe
     public float[] positionX;
     public float[] positionY;
     public float[] positionZ;
+
+    public float hipPositionX;
+    public float hipPositionY;
+    public float hipPositionZ;
 
     public float[] rotationW;
     public float[] rotationX;
