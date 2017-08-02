@@ -4,6 +4,7 @@ using VRCSDK2;
 using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Linq;
 
 public class PoseRecorder : MonoBehaviour
 {
@@ -168,44 +169,22 @@ public class PoseRecorder : MonoBehaviour
             if (animTimer < (recordingFrames.Count / framesPerSecond))
                 return;
 
-            float hipPosX = 0;
-            float hipPosY = 0;
-            float hipPosZ = 0;
-
-            List<float> tempRotationX = new List<float>();
-            List<float> tempRotationY = new List<float>();
-            List<float> tempRotationZ = new List<float>();
-            List<float> tempRotationW = new List<float>();
-
+            Vector3 hipPos = Vector3.zero;
+            
+            List<Quaternion> tempRotation = new List<Quaternion>();
+            
             for (int i = 0; i < bones.Length; i++)
             {
                 if (Networking.LocalPlayer.GetBoneTransform(bones[i]) == null)
                     continue;
 
                 if (i == 0)
-                {
-                    hipPosX = Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.position.x;
-                    hipPosY = Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.position.y;
-                    hipPosZ = Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.position.z;
-                }
+                    hipPos = Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.position;
 
-                tempRotationX.Add(Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.localRotation.x);
-                tempRotationY.Add(Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.localRotation.y);
-                tempRotationZ.Add(Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.localRotation.z);
-                tempRotationW.Add(Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.localRotation.w);
+                tempRotation.Add(Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.localRotation);
             }
 
-            SignKeyframe tempFrame = new SignKeyframe()
-            {
-                hipPositionX = hipPosX,
-                hipPositionY = hipPosY,
-                hipPositionZ = hipPosZ,
-
-                rotationX = tempRotationX.ToArray(),
-                rotationY = tempRotationY.ToArray(),
-                rotationZ = tempRotationZ.ToArray(),
-                rotationW = tempRotationW.ToArray(),
-            };
+            SignKeyframe tempFrame = new SignKeyframe(hipPos, tempRotation.ToArray());
 
             recordingFrames.Add(tempFrame);
 
@@ -246,11 +225,17 @@ public class KeyframeInformation
 [Serializable]
 public class SignKeyframe
 {
-    //TODO// Finish implimenting this constructor
-    //public SignKeyframe(Vector3[] position, Vector3 hipPosition, Quaternion[] rotation)
-    //{
-    //    positionX = position[].x;
-    //}
+    public SignKeyframe(Vector3 hipPosition, Quaternion[] rotation)
+    {
+        hipPositionX = hipPosition.x;
+        hipPositionX = hipPosition.y;
+        hipPositionX = hipPosition.z;
+
+        rotationW = rotation.Select( q => q.w ).ToArray();
+        rotationX = rotation.Select( q => q.x ).ToArray();
+        rotationY = rotation.Select( q => q.y ).ToArray();
+        rotationZ = rotation.Select( q => q.z ).ToArray();
+    }
 
     public float[] positionX;
     public float[] positionY;
