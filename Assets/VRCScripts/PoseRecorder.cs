@@ -50,13 +50,11 @@ public class PoseRecorder : MonoBehaviour
 
     private bool recordingTimerOn;
     private float recordingTimer;
-
-    //Audio Nonsense
-    //private AudioSource micInput;
+    
     private AudioClip audioRecording = new AudioClip();
+
     private void Awake()
     {
-        //micInput = GameObject.Find("USpeak").GetComponent<AudioSource>();
         SetupInstance();
     }
 
@@ -73,8 +71,8 @@ public class PoseRecorder : MonoBehaviour
 
         if (audioSource)
             audioSource.Play();
-
-        if(recordAudio)
+        
+        if (recordAudio)
             audioRecording = Microphone.Start("", false, 3600, 44100);
 
         recordingFrames = new List<SignKeyframe>();
@@ -99,7 +97,7 @@ public class PoseRecorder : MonoBehaviour
         {
             int tempPos = Microphone.GetPosition("");
             Microphone.End("");
-            float[] tempData = new float[tempPos * 44100];
+            float[] tempData = new float[tempPos];
             audioRecording.GetData(tempData, 0);
             audioRecording = AudioClip.Create("recorded audio", tempPos, 1, 44100, false);
             audioRecording.SetData(tempData, 0);
@@ -154,64 +152,42 @@ public class PoseRecorder : MonoBehaviour
 
     private void Update()
     {
-        if (recordingTimerOn)
+        if (recordingTimerOn && timerText != null)
         {
-            if (timerText != null)
-            {
-                recordingTimer += Time.deltaTime;
-                timerText.text = recordingTimer.ToString("F1");
-            }
+            recordingTimer += Time.deltaTime;
+            timerText.text = recordingTimer.ToString("F1");
         }
 
         if (recording)
         {
             animTimer += Time.deltaTime;
-            if (animTimer < (recordingFrames.Count / framesPerSecond))
-                return;
+            if (animTimer < (recordingFrames.Count / framesPerSecond)) return;
 
-            Vector3 hipPos = Vector3.zero;
+            if (bones.Length == 0) { Debug.LogError("No bones found, please setup your avatar."); return; }
+
+            recordingFrames.Add(new SignKeyframe(
+                Networking.LocalPlayer.GetBoneTransform(bones[0]).transform.position,
+                bones.Select(b => Networking.LocalPlayer.GetBoneTransform(b).transform.localRotation).Where(b => b != null).ToArray()));
             
-            List<Quaternion> tempRotation = new List<Quaternion>();
-            
-            for (int i = 0; i < bones.Length; i++)
-            {
-                if (Networking.LocalPlayer.GetBoneTransform(bones[i]) == null)
-                    continue;
-
-                if (i == 0)
-                    hipPos = Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.position;
-
-                tempRotation.Add(Networking.LocalPlayer.GetBoneTransform(bones[i]).transform.localRotation);
-            }
-
-            SignKeyframe tempFrame = new SignKeyframe(hipPos, tempRotation.ToArray());
-
-            recordingFrames.Add(tempFrame);
-
             keyframe++;
         }
         else if (playingAnim)
         {
             animTimer += Time.deltaTime;
 
-            if (animTimer < (keyframe / framesPerSecond))
-                return;
+            if (animTimer < (keyframe / framesPerSecond)) return;
 
             for (int i = 0; i < avatarBones.Length; i++)
             {
                 if (i == 0)
-                {
                     avatarBones[i].position = new Vector3(loadPositions[keyframe].hipPositionX, loadPositions[keyframe].hipPositionY, loadPositions[keyframe].hipPositionZ);
-                }
 
                 avatarBones[i].localRotation = new Quaternion(loadPositions[keyframe].rotationX[i], loadPositions[keyframe].rotationY[i], loadPositions[keyframe].rotationZ[i], loadPositions[keyframe].rotationW[i]);
             }
             keyframe++;
 
             if (keyframe >= loadPositions.Count - frameDiscardAmount)
-            {
                 playingAnim = false;
-            }
         }
     }
 }
@@ -228,8 +204,8 @@ public class SignKeyframe
     public SignKeyframe(Vector3 hipPosition, Quaternion[] rotation)
     {
         hipPositionX = hipPosition.x;
-        hipPositionX = hipPosition.y;
-        hipPositionX = hipPosition.z;
+        hipPositionY = hipPosition.y;
+        hipPositionZ = hipPosition.z;
 
         rotationW = rotation.Select( q => q.w ).ToArray();
         rotationX = rotation.Select( q => q.x ).ToArray();
