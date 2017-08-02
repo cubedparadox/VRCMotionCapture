@@ -62,7 +62,7 @@ namespace VRCSDK2
                     pipelineManager.user = user;
                     if (isUpdate)
                     {
-                        ApiAvatar.Fetch(pipelineManager.blueprintId,
+                        ApiAvatar.Fetch(pipelineManager.blueprintId, false,
                             delegate (ApiAvatar avatar)
                             {
                                 apiAvatar = avatar;
@@ -157,18 +157,18 @@ namespace VRCSDK2
 
             string avatarId = isUpdate ? apiAvatar.id : "new_" + VRC.Tools.GetRandomDigits(6);
             int version = isUpdate ? apiAvatar.version+1 : 1;
-            PrepareVRCPathForS3(abPath, avatarId, version);
+            PrepareVRCPathForS3(abPath, avatarId, version, ApiAvatar.VERSION);
 
 			if(!string.IsNullOrEmpty(unityPackagePath) && System.IO.File.Exists(unityPackagePath))
 			{
 				Debug.Log("Found unity package path. Preparing to upload!");
-				PrepareUnityPackageForS3(unityPackagePath, avatarId, version);
+				PrepareUnityPackageForS3(unityPackagePath, avatarId, version, ApiAvatar.VERSION);
 			}
 
             if (useFileApi)
                 StartCoroutine(UploadNew());
             else
-                StartCoroutine(Upload(blueprintName));
+                StartCoroutine(Upload(blueprintName, "avatars"));
         }
 
         IEnumerator UploadNew()

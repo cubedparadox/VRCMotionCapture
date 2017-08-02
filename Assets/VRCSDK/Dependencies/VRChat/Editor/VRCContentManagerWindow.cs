@@ -93,7 +93,8 @@ public class VRCContentManagerWindow : EditorWindow
             "",
             null,
             "",
-            ApiWorld.ReleaseStatus.All
+            ApiWorld.ReleaseStatus.All,
+            false
         );
 
         ApiAvatar.FetchList(
@@ -109,7 +110,11 @@ public class VRCContentManagerWindow : EditorWindow
             },
             ApiAvatar.Owner.Mine,
             null,
-            100
+            100,
+            0,
+            ApiAvatar.SortHeading.None,
+            ApiAvatar.SortOrder.Descending,
+            false
         );
     }
 

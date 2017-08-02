@@ -30,6 +30,9 @@ Your animations should now exist in the "Motion Capture Animations" folder in yo
 
 **Remember these animations will only work with the Avatar they where recorded with and when rig is generic!!**
 
+**Recording Audio**
+There is an audio recording checkbox on the 'Pose Recorder' component. If you check it, your microphone output will be recorded alongside the pose animation. The audio will be recorded to a wav file in the same directory as the animation data.
+
 ## How to setup an Avatar for mapping your recordings onto
 Create a duplication of the "Scenes/Base Scene" scene. Rename it to have your avatar name in it so you can locate it easier later.
 

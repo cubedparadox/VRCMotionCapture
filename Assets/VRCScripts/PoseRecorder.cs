@@ -17,6 +17,8 @@ public class PoseRecorder : MonoBehaviour
     public HumanBodyBones[] bones;
     [Tooltip("The text component which shows the recording time")]
     public Text timerText;
+    [Tooltip("Generates an audioclip from your microphone with the recording")]
+    public bool recordAudio;
 
     [HideInInspector]
     public Animator targetAvatar;
@@ -48,8 +50,12 @@ public class PoseRecorder : MonoBehaviour
     private bool recordingTimerOn;
     private float recordingTimer;
 
+    //Audio Nonsense
+    //private AudioSource micInput;
+    private AudioClip audioRecording = new AudioClip();
     private void Awake()
     {
+        //micInput = GameObject.Find("USpeak").GetComponent<AudioSource>();
         SetupInstance();
     }
 
@@ -66,6 +72,9 @@ public class PoseRecorder : MonoBehaviour
 
         if (audioSource)
             audioSource.Play();
+
+        if(recordAudio)
+            audioRecording = Microphone.Start("", false, 3600, 44100);
 
         recordingFrames = new List<SignKeyframe>();
         keyframe = 0;
@@ -85,6 +94,16 @@ public class PoseRecorder : MonoBehaviour
 
     public void StopRecording()
     {
+        if (recordAudio)
+        {
+            int tempPos = Microphone.GetPosition("");
+            Microphone.End("");
+            float[] tempData = new float[tempPos * 44100];
+            audioRecording.GetData(tempData, 0);
+            audioRecording = AudioClip.Create("recorded audio", tempPos, 1, 44100, false);
+            audioRecording.SetData(tempData, 0);
+        }
+
         recording = false;
         recordingTimerOn = false;
         SaveRecordPositions();
@@ -118,6 +137,8 @@ public class PoseRecorder : MonoBehaviour
         }
 
         File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games/VRChat/MoCap Recordings/SignAnimation" + DateTime.Now.ToString("dd-MM-yyyy_hh-mm-ss") + ".txt", json);
+        if(recordAudio)
+            SavWav.Save(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games/VRChat/MoCap Recordings/SignAnimation" + DateTime.Now.ToString("dd-MM-yyyy_hh-mm-ss") + ".wav", audioRecording);
     }
 
     private void CreateDirectory()
@@ -225,6 +246,12 @@ public class KeyframeInformation
 [Serializable]
 public class SignKeyframe
 {
+    //TODO// Finish implimenting this constructor
+    //public SignKeyframe(Vector3[] position, Vector3 hipPosition, Quaternion[] rotation)
+    //{
+    //    positionX = position[].x;
+    //}
+
     public float[] positionX;
     public float[] positionY;
     public float[] positionZ;

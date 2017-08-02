@@ -75,7 +75,7 @@ namespace VRCSDK2
 
             if (isUpdate)
             {
-                ApiWorld.Fetch(pipelineManager.blueprintId, 
+                ApiWorld.Fetch(pipelineManager.blueprintId, false,
                     delegate (ApiWorld world)
                     {
                         worldRecord = world;
@@ -217,12 +217,12 @@ namespace VRCSDK2
 
             string blueprintId = isUpdate ? worldRecord.id : "new_" + VRC.Tools.GetRandomDigits(6);
             int version = isUpdate ? worldRecord.version+1 : 1;
-            PrepareVRCPathForS3(abPath, blueprintId, version);
+            PrepareVRCPathForS3(abPath, blueprintId, version, ApiWorld.VERSION);
 
 			if(!string.IsNullOrEmpty(pluginPath) && System.IO.File.Exists(pluginPath))
             {
 				Debug.Log("Found plugin path. Preparing to upload!");
-                PreparePluginPathForS3(pluginPath, blueprintId, version);
+                PreparePluginPathForS3(pluginPath, blueprintId, version, ApiWorld.VERSION);
             }
             else
             {
@@ -232,13 +232,13 @@ namespace VRCSDK2
 			if(!string.IsNullOrEmpty(unityPackagePath) && System.IO.File.Exists(unityPackagePath))
 			{
 				Debug.Log("Found unity package path. Preparing to upload!");
-				PrepareUnityPackageForS3(unityPackagePath, blueprintId, version);
+				PrepareUnityPackageForS3(unityPackagePath, blueprintId, version, ApiWorld.VERSION);
 			}
 
             if (useFileApi)
                 StartCoroutine(UploadNew());
             else
-                StartCoroutine(Upload(blueprintName));
+                StartCoroutine(Upload(blueprintName, "Worlds"));
         }
 
         IEnumerator UploadNew()
