@@ -45,5 +45,6 @@ Now just use same steps as when you brought in test animations with UnityChan.
 **Remember these animations will only work with the Avatar they where recorded with and when rig is generic!!**
 
 ## Notes
-Project contains the following assets:  
+Project contains the following assets:
+* <a href="http://vrchat.net">VRChat SDK</a> (Git ignored, requires importing)
 * <a href="http://unity-chan.com/">SD UnityChan</a>

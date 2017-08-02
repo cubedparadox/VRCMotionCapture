@@ -207,9 +207,9 @@ public class PoseRecorderEditor : MonoBehaviour
                     PoseRecorder.Instance.avatarBones[i].position = originPos[i];
                     PoseRecorder.Instance.avatarBones[i].rotation = originRot[i];
                 }
-
-                ExportAnimationClip();
             }
+
+            ExportAnimationClip();
         }
 
         animFileIndex++;
